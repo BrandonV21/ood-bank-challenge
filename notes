@@ -1,0 +1,28 @@
+noun (objects, class):
+Client
+Transaction
+AccountStatement
+
+
+properties:
+date
+credit
+debit
+balance
+
+
+verb (message, method):
+deposit
+withdrawal 
+print
+
+object          | properties          | method                      | output
+Client          | balance[@number]    | deposit(addCredit)          | 1000
+                |                     | withdrawal(removeCredit)    | 500
+
+Transaction     | credit[@number]     |
+                | debit[@number]      |
+                | date[@string]       |
+
+AccountStatement|  balance[@number]   | print()               | 500
+                | 
